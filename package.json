@@ -1,5 +1,4 @@
 {
-  "proxy": "%REACT_APP_SERVER_URL%",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
