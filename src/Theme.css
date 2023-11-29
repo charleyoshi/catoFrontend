@@ -1,0 +1,93 @@
+.theme {
+    cursor: pointer;
+    display: flex;
+}
+
+
+.themeLabel {
+    border: 2px black solid;
+    width: 65px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.themeLabel:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: sandybrown;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.themeLabel:hover {
+    box-shadow:1px 1px;
+}
+
+
+.themeInput {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+
+.themeInput:checked+.themeLabel {
+    background: #242424;
+    border: 2px white solid;
+}
+
+.themeInput:checked+.themeLabel:after {
+    left: 62px;
+    transform: translateX(-100%);
+    background: dimgray;
+}
+
+.themeLabel:active:after {
+    width: 30px;
+    
+}
+
+.themeLabel span {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    top: 3px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.themeLabel span.sun {
+    left: 5px;
+    color: white;
+    transition: 0.3s;
+    padding-left: 0.8px;
+    padding-top: 0.8px;
+}
+
+.themeLabel span.moon {
+    left: 40px;
+    color: black;
+    transition: 0.3s;
+}
+
+.themeInput:checked+.themeLabel span.sun {
+    color: lightblue;
+}
+
+.themeInput:checked+.themeLabel span.moon {
+    color: #fff;
+}

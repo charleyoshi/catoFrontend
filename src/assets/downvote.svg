@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="auto" viewBox='0 0 18 18' >
+    <g fill="pink">
+        <path d="M 8 18 l 8 -9 H 11 v -9 H 5 V 9 h -5 z" />
+    </g>
+</svg>
