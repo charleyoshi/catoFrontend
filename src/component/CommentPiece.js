@@ -43,7 +43,7 @@ export default function CommentPiece(props) {
         }
 
         fetchCommenter(comment.userID)
-    }, [])
+    }, [comment.userID])
 
 
     const handleClickReplyButton = () => {

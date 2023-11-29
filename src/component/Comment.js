@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useAuthContext } from '../hooks/useAuthContext'
 import cat from '../assets/cat.gif'
 

@@ -4,9 +4,8 @@ import axios from 'axios'
 import Sidebar from "../component/Sidebar";
 import Video from "../component/Video";
 import Comment from "../component/Comment";
-import { useNavigate } from "react-router-dom";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setVideoID } from "../reducers/commentSlice";
 import NotFound from "./NotFound";
 import { useLocation } from 'react-router-dom';
@@ -57,14 +56,14 @@ const Watch = () => {
                     }
                 })
         }
-        
+
         var videoID
 
         // Access the passed state from location
         const { state } = location;
-        
+
         // If link is shorts that looks like [https://www.youtube.com/shorts/LUztwR3xGIw]
-        if (state && state.vid) { 
+        if (state && state.vid) {
             videoID = state.vid
             const params = new URLSearchParams(window.location.search);
             params.set('v', videoID);
@@ -82,7 +81,7 @@ const Watch = () => {
         } else {
             fetchVideo(videoID)
         }
-    }, [dispatch, location])
+    }, [dispatch, location, searchParams])
 
 
     return (

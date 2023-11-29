@@ -11,8 +11,9 @@ export default function Legal() {
     const refsObject = {
         terms: terms,
         privacy: privacy,
-        contact, contact
+        contact: contact
     }
+
 
     useEffect(() => {
         if (state && state.ref) {
@@ -21,7 +22,7 @@ export default function Legal() {
         if (!state) {
             console.log('no state')
         }
-    }, [])
+    }, [state, refsObject])
 
     return (
 

@@ -50,7 +50,7 @@ export default function VoteBox(props) {
         }
 
         fetchVotes(props.comment._id)
-    }, [user, dispatch])
+    }, [user, dispatch, props.comment._id])
 
 
     const disableVote = (voteType) => {
