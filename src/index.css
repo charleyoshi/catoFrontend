@@ -1125,6 +1125,7 @@ span.error {
   padding-top: 20px;
   text-align: center;
 }
+
 .footer ul {
   list-style-type: none;
   width: 30%;
@@ -1143,6 +1144,68 @@ span.error {
   padding: 22px;
 }
 
-.legal a   {
+.legal a {
   color: var(--link-color);
+}
+@media only screen and (max-width: 768px) {
+  .watch {
+    padding-left: 4px;
+    padding-right: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Navbar .container .right {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  /* Adjustments for mobile devices */
+
+  .Navbar .container .right {
+    padding: 0;
+  }
+ 
+  .home section.one {
+    grid-template-rows: 4fr 1fr;
+  }
+
+  .home section.two .lower span {
+    width: 66%;
+  }
+
+  .Navbar .container,
+  .home section.one .upper,
+  .home section.one .lower,
+  .home section.two .lower form,
+  
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer ul li {
+    padding: 8px 0;
+  }
+
+  .home section.two .lower form input {
+    width: 100%;
+    align-self: center;
+  }
+
+  .home section.two .lower form button {
+    height: 36px;
+  }
+
+  .home section.three .lower {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .Navbar .container .right {
+    flex-direction: column;
+  }
 }
