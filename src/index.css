@@ -480,6 +480,10 @@ span.error {
   object-fit: none;
 }
 
+.sidebar .sidebarVideo .thumbnail img {
+  object-fit: cover;
+}
+
 .sidebar .sidebarVideo .text {
   width: 68%;
   font-size: small;
@@ -1149,6 +1153,7 @@ span.error {
 .legal a {
   color: var(--link-color);
 }
+
 @media only screen and (max-width: 768px) {
   .watch {
     padding-left: 12px;
@@ -1157,6 +1162,7 @@ span.error {
     flex-direction: column;
     align-items: center;
   }
+
   .Navbar .container .right {
     padding-right: 0px;
   }
@@ -1168,7 +1174,7 @@ span.error {
   .Navbar .container .right {
     padding: 0;
   }
- 
+
   .home section.one {
     grid-template-rows: 4fr 1fr;
   }
@@ -1201,7 +1207,7 @@ span.error {
   }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 320px) {
   .Navbar .container .right {
     flex-direction: column;
   }

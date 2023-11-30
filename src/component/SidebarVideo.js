@@ -19,7 +19,7 @@ function SidebarVideo({ video }) {
         <div onClick={handleOnClick} className="sidebarVideo">
             <div className="thumbnail">
                 <img referrerPolicy="no-referrer" src={video.thumbnail}
-                    alt="thumbnail" width="100%" height="auto"/>
+                    alt="thumbnail" width="100%" height="auto" />
             </div>
             <div className="text">
                 <div className="title">{video.title}</div>
