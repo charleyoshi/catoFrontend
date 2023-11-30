@@ -600,6 +600,7 @@ span.error {
 
 .watch .video .row-3 .showLess {
   text-align: center;
+  cursor: pointer;
 }
 
 .watch .video .row-3 .description span a {

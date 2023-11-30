@@ -55,7 +55,7 @@ const Video = ({ video }) => {
                     {!openDescription ? dateAbbrev : dateReadable}</p>
                 <div className="description"><Linkify>{openDescription ? descriptionFull : descriptionShort}</Linkify></div>
 
-                {openDescription ? <p className="showLess" onClick={() => setOpenDescription(false)}><br /><br /><hr />show less</p> : null}
+                {openDescription ? <div className="showLess" onClick={() => setOpenDescription(false)}><br /><br /><hr />show less </div> : null}
             </div>
         </div>
     )
