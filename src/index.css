@@ -1162,6 +1162,9 @@ span.error {
     flex-direction: column;
     align-items: center;
   }
+  .watch .main {
+    width: 100%;
+  }
 
   .Navbar .container .right {
     padding-right: 0px;

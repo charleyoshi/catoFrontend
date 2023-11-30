@@ -41,7 +41,7 @@ const Video = ({ video }) => {
             <div className="row row-2">
                 <div className="channel">
                     <div className="avatarCircle">
-                        <img  referrerPolicy="no-referrer" src={video.avatar}
+                        <img referrerPolicy="no-referrer" src={video.avatar}
                             alt="avatar" width="50px" height="50px" />
                     </div>
                     <span className="author">{video.author}</span>
@@ -49,7 +49,10 @@ const Video = ({ video }) => {
                 {video.isCato && <span className="isCato">Commenting off on YouTube ? Join the chatter here!</span>}
             </div>
             <div className={`row row-3 ${openDescription ? 'opened' : 'closed'}`} onClick={() => { if (!openDescription) setOpenDescription(true) }} >
-                <p className="viewsAndTime" onClick={() => setOpenDescription(!openDescription)}>{!openDescription ? viewsAbbrev : video.views.toLocaleString('en-US')} views &nbsp;  {!openDescription ? dateAbbrev : dateReadable}</p>
+                <p className="viewsAndTime" onClick={() => setOpenDescription(!openDescription)}>
+                    {video.views &&
+                        <>{!openDescription ? viewsAbbrev : video.views.toLocaleString('en-US')} views &nbsp; </>}
+                    {!openDescription ? dateAbbrev : dateReadable}</p>
                 <div className="description"><Linkify>{openDescription ? descriptionFull : descriptionShort}</Linkify></div>
 
                 {openDescription ? <p className="showLess" onClick={() => setOpenDescription(false)}><br /><br /><hr />show less</p> : null}
