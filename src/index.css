@@ -1171,6 +1171,10 @@ span.error {
     padding: 0 6px;
   }
 
+  .watch .video .row-2 .isCato {
+    font-size: small;
+  }
+
   .comment .row form textarea{
     margin-top: 0;
     border-left: 1px solid transparent;
