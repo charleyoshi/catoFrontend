@@ -476,7 +476,6 @@ span.error {
   display: flex;
   overflow: auto;
   width: 60%;
-  height: fit-content;
   height: auto;
   object-fit: none;
 }
