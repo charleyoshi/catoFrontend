@@ -1166,6 +1166,17 @@ span.error {
   .Navbar .container .right {
     padding-right: 0px;
   }
+
+  .watch .video .row-2 .channel .author {
+    padding: 0 6px;
+  }
+
+  .comment .row form textarea{
+    margin-top: 0;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }
 }
 
 @media only screen and (max-width: 538px) {
