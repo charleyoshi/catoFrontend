@@ -340,6 +340,7 @@ span.error {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-left: 2px;
 }
 
 .account .userContainer .userCircle {
@@ -476,6 +477,7 @@ span.error {
   overflow: auto;
   width: 60%;
   height: fit-content;
+  height: auto;
 }
 
 .sidebar .sidebarVideo .text {
@@ -1178,8 +1180,6 @@ span.error {
   .Navbar .container,
   .home section.one .upper,
   .home section.one .lower,
-  .home section.two .lower form,
-  
   .footer ul {
     display: flex;
     flex-direction: column;
