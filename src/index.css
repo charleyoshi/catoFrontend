@@ -478,6 +478,7 @@ span.error {
   width: 60%;
   height: fit-content;
   height: auto;
+  object-fit: none;
 }
 
 .sidebar .sidebarVideo .text {
