@@ -1151,8 +1151,8 @@ span.error {
 }
 @media only screen and (max-width: 768px) {
   .watch {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1195,9 +1195,6 @@ span.error {
     align-self: center;
   }
 
-  .home section.two .lower form button {
-    height: 36px;
-  }
 
   .home section.three .lower {
     display: block;
