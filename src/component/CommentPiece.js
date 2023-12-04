@@ -25,7 +25,7 @@ export default function CommentPiece(props) {
     useEffect(() => {
         const fetchCommenter = async (id) => {
 
-            axios.get(`${REACT_APP_SERVER_URL}/api/user/${id}`)
+            axios.get(`${process.env.REACT_APP_SERVER_URL}/api/user/${id}`)
                 .then((response) => {
                     if (response.data) {
                         const commenter = response.data

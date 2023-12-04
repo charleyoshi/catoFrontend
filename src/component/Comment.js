@@ -24,7 +24,7 @@ export default function Comment(props) {
         // use Redux: central state management 
         const fetchComments = async (vid) => {
 
-            axios.get(`${REACT_APP_SERVER_URL}/api/video/${vid}/comments`, {params : {sortBy: selectedSort}})
+            axios.get(`${process.env.REACT_APP_SERVER_URL}/api/video/${vid}/comments`, {params : {sortBy: selectedSort}})
                 .then((response) => {
                     const { comments, replies } = response.data
                     dispatch(setComments(comments))
