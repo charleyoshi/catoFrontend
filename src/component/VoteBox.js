@@ -21,7 +21,7 @@ export default function VoteBox(props) {
 
         const fetchVotes = async (cid) => {
 
-            axios.get(`/api/comment/${cid}/votes`)
+            axios.get(`${REACT_APP_SERVER_URL}/api/comment/${cid}/votes`)
                 .then((response) => {
                     const { votes } = response.data
                     // console.log('v: ', votes)
@@ -62,7 +62,7 @@ export default function VoteBox(props) {
     const handleVote = (voteType) => {
         if (!user || userVoted) { return }
 
-        axios.post(`/api/comment/${props.comment._id}/votes`, {
+        axios.post(`${REACT_APP_SERVER_URL}/api/comment/${props.comment._id}/votes`, {
             voteType: voteType, userID: user && user.userID
         })
             .then(function (response) {

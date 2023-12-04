@@ -19,7 +19,7 @@ export default function Report(props) {
 
     const submitForm = () => {
         // console.log(selectedReasons, props.commentID)
-        axios.post(`/api/report`, {
+        axios.post(`${REACT_APP_SERVER_URL}/api/report`, {
             commentID: props.commentID, reasons: selectedReasons
         })
             .then(function (response) {

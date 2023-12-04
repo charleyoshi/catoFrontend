@@ -29,7 +29,7 @@ const Watch = () => {
 
         const fetchVideo = async (vid) => {
 
-            axios.get(`/api/videos/${vid}`)
+            axios.get(`${REACT_APP_SERVER_URL}/api/videos/${vid}`)
                 .then((response) => {
                     const video = response.data
                     setVideo(video)
@@ -43,7 +43,7 @@ const Watch = () => {
                     } else {
                         // POST video
                         try {
-                            const response = await axios.post('/api/videos', { id: vid })
+                            const response = await axios.post(`${REACT_APP_SERVER_URL}/api/videos`, { id: vid })
                             const video = response.data
                             setVideo(video)
                             dispatch(setVideoID(video.vid))

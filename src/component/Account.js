@@ -19,7 +19,7 @@ export default function Account() {
 
     /* global google */
     google.accounts.id.initialize({
-      client_id: '81267985240-09qcr5ug991sq0hrs5saeiibq1b6f85q.apps.googleusercontent.com',
+      client_id: process.env.REACT_APP_GOOGLE_SIGNIN_CLIENT_ID,
       auto_select: true,
       callback: handleCredentialResponse,
     });

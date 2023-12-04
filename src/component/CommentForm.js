@@ -72,7 +72,7 @@ export default function CommentForm(props) {
         e.preventDefault()
         if (!textareaValue.trim().length) { return }
 
-        axios.post(`/api/video/${vid}/comments`, {
+        axios.post(`${REACT_APP_SERVER_URL}/api/video/${vid}/comments`, {
             text: textareaValue, parentID: cid ?? null, userID: user ? user.userID : null
         })
             .then(function (response) {
