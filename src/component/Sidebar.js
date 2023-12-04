@@ -12,7 +12,7 @@ const Sidebar = (props) => {
             const locales = navigator.languages.map(l => l.toLowerCase())
 
             // Make API request for recommendation videos based on locales
-            axios.get(`${REACT_APP_SERVER_URL}/api/videos`, { params: { locale: locales, amount: 20 } })
+            axios.get(`${process.env.REACT_APP_SERVER_URL}/api/videos`, { params: { locale: locales, amount: 20 } })
                 .then((response) => {
                     if (response.data) {
                         if (response.data.videos) {
