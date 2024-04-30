@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# CatoApp Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend repository of CatoApp, a dynamic MERN stack application designed to enable discussions on YouTube videos with disabled comments.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+CatoApp aims to address the common frustration of "comments are turned off" on YouTube videos by providing a platform where users can share their thoughts and opinions seamlessly. This repository specifically focuses on the frontend implementation of the application.
 
-### `npm start`
+![featureImage](https://github.com/charleyoshi/catoFrontend/assets/92558610/8ff68fcc-5144-46e8-8735-bf9734ccb53f)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![featureImage 2](https://github.com/charleyoshi/catoFrontend/assets/92558610/217496d6-5de3-4f95-aa14-3ec96c447053)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Commenting System**: Users can comment on videos with their identity or anonymously. 
+- **Voting System**: Signed-in users can upvote or downvote comments, ensuring accountability and preventing multiple votes.
+- **Google Authentication**: Users can sign in with Google for seamless authentication.
+- **Dynamic UI**: The frontend replicates the layout and aesthetics of YouTube for a familiar user experience.
+- **Localization**: Provides locale-based recommendations for an enhanced user experience.
 
-### `npm run build`
+## Folder Structure and Libraries
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The frontend files are structured within the `src` directory as follows:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `assets`: For static images and non-code assets used across the application.
+- `components`: Contains reusable React functional components.
+- `context`: Houses custom context, such as AuthContext, for authentication needs.
+- `hooks`: Includes custom hooks for various functionalities.
+- `pages`: Contains page-specific components, such as the home page and 404 page.
+- `reducers`: Stores Redux reducers for centralized state management.
+- `utility`: Houses utility functions and helper modules.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Libraries Used:
 
-### `npm run eject`
+- **React**: The foundation of the frontend.
+- **Redux**: Centralized state management for data and actions within the application.
+- **Axios**: Robust HTTP client for making asynchronous requests to the backend.
+- [**Emoji-Mart**](https://www.npmjs.com/package/emoji-mart): Library offering an emoji keyboard for enhanced user interaction.
+- [**Date-fns**](https://date-fns.org/): Utilized to transform date formats for improved user experience.
+- [**React-String-Replace**](https://www.npmjs.com/package/react-string-replace): Used to convert plain text into clickable timestamps.
+- [**Linkify**](https://www.npmjs.com/package/react-linkify): Converts plain text into hyperlinks for improved usability.
+- [**React-Player**](https://www.npmjs.com/package/react-player): Implemented instead of iframes to support starting videos at specific seconds.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To set up the frontend locally, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm start`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Contributions are welcome! If you encounter any bugs or have suggestions for enhancements, feel free to open an issue or submit a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
